@@ -1,0 +1,8 @@
+<div class="user-card">
+    <h2>{{ user.username }}</h2>
+    <p>{{ user.email }}</p>
+
+    <button class="btn" *ngIf="showViewMoreBtn" (click)="viewMore()">
+        View more
+    </button>
+</div>
