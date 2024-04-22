@@ -1,0 +1,8 @@
+<h1>Users</h1>
+
+<section>
+    <app-admin-user-list
+        *ngIf="users$ | async as users"
+        [users]="users"
+    ></app-admin-user-list>
+</section>

@@ -1,0 +1,9 @@
+<h1 *ngIf="user$ | async as user">User {{ user.username }}</h1>
+
+<section>
+    <button class="btn" (click)="goToHome()">Back to home</button>
+    <app-account-profile
+        *ngIf="user$ | async as user"
+        [user]="user"
+    ></app-account-profile>
+</section>
