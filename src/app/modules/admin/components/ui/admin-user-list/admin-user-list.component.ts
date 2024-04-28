@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { User } from '../../../../../models/classes/user';
+import { User } from '../../../../shared/models/classes/user';
 
 @Component({
     selector: 'app-admin-user-list',

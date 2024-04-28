@@ -9,13 +9,13 @@ import { Observable } from 'rxjs';
 export class UserService {
     constructor(private httpClient: HttpClient) {}
 
-    getUsers(): Observable<User[]> {
+    getAll(): Observable<User[]> {
         return this.httpClient.get<User[]>(
             'https://jsonplaceholder.typicode.com/users'
         );
     }
 
-    getUser(userId: number): Observable<User> {
+    getById(userId: number): Observable<User> {
         return this.httpClient.get<User>(
             `https://jsonplaceholder.typicode.com/users/${userId}`
         );

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { UserCardComponent } from './modules/shared/components/user-card/user-card.component';
+import { UserCardComponent } from './components/user-card/user-card.component';
 
 @NgModule({
     declarations: [UserCardComponent],
